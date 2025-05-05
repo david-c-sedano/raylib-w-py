@@ -1,0 +1,4 @@
+/build
+/src/raylibwpy/raylibwpy.pyd
+/src/raylibwpy/__pycache__
+/src/raylib/__pycache__
