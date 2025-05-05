@@ -7,8 +7,8 @@ rl.InitWindow(WIDTH, HEIGHT, "raylib [core] example - basic window - PYTHON EDIT
 while not rl.WindowShouldClose():
     rl.BeginDrawing()
 
-    rl.ClearBackground(rl.Color(hex=0xFFFFFFFF))
-    rtxt.DrawText("Congrats! You created your first window with Python!", 130, 200, 20, rl.Color(hex=0x000000FF))
+    rl.ClearBackground(rl.RAYWHITE)
+    rtxt.DrawText("Congrats! You created your first window with Python!", 130, 200, 20, rl.LIGHTGRAY)
 
     rl.EndDrawing()
 
