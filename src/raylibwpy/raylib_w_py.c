@@ -34,6 +34,8 @@ static PyMethodDef
 Methods[] = {
     {"ctest_AddTwo", py_AddTwo, METH_VARARGS, "Just a test function to ensure stuff works"},
     INCLUDE_RCORE,
+    INCLUDE_RSHAPES,
+    INCLUDE_RTEXTURES,
     INCLUDE_RTEXT,
     {NULL, NULL, 0, NULL}
 };
@@ -54,6 +56,8 @@ PyMODINIT_FUNC PyInit_raylibwpy(void) {
 
     if (py_register_type(m, &py_Vector2, "Vector2") < 0) goto fail;
     if (py_register_type(m, &py_Color, "Color") < 0) goto fail;
+    if (py_register_type(m, &py_Rectangle, "Rectangle") < 0) goto fail;
+    if (py_register_type(m, &py_Camera2D, "Camera2D") < 0) goto fail;
         
     return m;
 

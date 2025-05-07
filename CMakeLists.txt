@@ -5,6 +5,8 @@ add_subdirectory(vendor/raylib)
 add_library(raylib_w_py MODULE 
     src/raylibwpy/raylib_w_py.c
     src/raylibwpy/modules/rcore_w_py.c
+    src/raylibwpy/modules/rshapes_w_py.c
+    src/raylibwpy/modules/rtextures_w_py.c
     src/raylibwpy/modules/rtext_w_py.c
     src/raylibwpy/modules/rstructs_w_py.c
 )

@@ -6,38 +6,9 @@ These are [Raylib](https://github.com/raysan5/raylib) bindings for Python, hand-
 - Obviously, you need `python` and `pip` installed.
 - Working C toolchain, GCC or LLVM.
     - I use MSVC when im developing on my Windows machine. I am a masochist I geuss.
+    - NOTE: CURRENTLY I HAVE NOT TESTED THIS ON DIFFERENT COMPILERS OR OSs. YOU WILL PROBABLY HAVE TO USE MSVC ON WINDOWS FOR THE BEST CHANCE AT GETTING IT TO WORK. IM VERY SORRY (MSVC *SUCKS*) THIS IS ON MY TODO LIST
 - CMake. This project uses [scikit-build-core](https://github.com/scikit-build/scikit-build-core) to not only build the Python module, but also to compile the Raylib source code.
 - do `pip install -e .` in the project directory and you are gucci. Run the tests or whatever to make sure everything works
 
 ## TODO:
-Currently, a basic Window works and is rather ergonomic. Next:
-- add the color constants 
-    - raywhite....
-- Handle all the different Raylib Modules
-    - rcore
-        - drawing related funcs
-        - input functions, keyboard mouse, the enums for that stuff...
-        - camera controls
-    - rshapes
-        - DrawPixel, DrawLine, DrawCircle, DrawEllipse, DrawRing, DrawRectangle, DrawTriangle, DrawPoly
-        - DrawSpline, whatever bezier curve nonsense...
-        - GetSplinePoint
-        - CheckCollision
-    - rtextures
-        - LoadImage, UnloadImage, 
-        - ImageDraw
-        - LoadTexture, DrawTexture
-    - rtext
-        - LoadFont, UnloadFont, DrawFPS
-        - MeasureText, SetTextLineSpacing, Glyphs...
-    - rmodels
-        - Draw 3d shape funcs...
-        - DrawModel,
-    - raudio
-        - InitAudioDevice, CloseAudioDevice
-        - MusicStream Func's
-        - LoadSound, UnloadSound, PlaySound
-    - back to rcore
-        - shaders...
-
-After this point, the rest is just annoying and tedious programming grunt work. Hopefully I get so good at it, I can just play the Nintendo 3DS System OST (internet settings and eShop main theme go so hard) and finish them slowly but with great ease. It should be therapeutic. 
+REWRITE FREAKING EVERYTHING WITH `pybind11` ON LINUX WITH GCC/CLANG. THEN ENSURE IT WORKS ON MSVC ON WINDOWS!!
